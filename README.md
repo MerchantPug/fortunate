@@ -2,7 +2,7 @@
 Fortunate is a data pack that reworks how Fortune works.
 
 Fortune's drop increasing is now built into the ore, and Fortune just increases the chances of getting these extra ores.
-Some other minor changes are that Gold now drops 1-3 Raw Gold without the Fortune rolls, and that Emerald ore drops 2-4 ores without Fortune rolls. 
+Emerald ore also drops 2-4 ores without Fortune rolls. 
 
 This pack was made to buff ores for players who are not interested in following metas, such as waiting on Fortune III and trying to get it ASAP, or making farms to get their ores.
 

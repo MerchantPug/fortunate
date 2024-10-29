@@ -13,18 +13,20 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "enchantments": [
-                      {
-                        "enchantment": "minecraft:silk_touch",
-                        "levels": {
-                          "min": 1
+                    "predicates": {
+                      "enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
                         }
-                      }
-                    ]
+                      ]
+                    }
                   }
                 }
               ],
-              "name": "minecraft:iron_ore"
+              "name": "minecraft:deepslate_coal_ore"
             },
             {
               "type": "minecraft:item",
@@ -37,7 +39,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:raw_iron"
+              "name": "minecraft:coal"
             }
           ]
         }
@@ -45,5 +47,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/iron_ore"
+  "random_sequence": "minecraft:blocks/deepslate_coal_ore"
 }

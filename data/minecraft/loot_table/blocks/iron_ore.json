@@ -13,40 +13,33 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "enchantments": [
-                      {
-                        "enchantment": "minecraft:silk_touch",
-                        "levels": {
-                          "min": 1
+                    "predicates": {
+                      "enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
                         }
-                      }
-                    ]
+                      ]
+                    }
                   }
                 }
               ],
-              "name": "minecraft:redstone_ore"
+              "name": "minecraft:iron_ore"
             },
             {
               "type": "minecraft:item",
               "functions": [
                 {
-                  "add": false,
-                  "count": {
-                    "type": "minecraft:uniform",
-                    "max": 5.0,
-                    "min": 4.0
-                  },
-                  "function": "minecraft:set_count"
-                },
-                {
                     "function": "minecraft:reference",
-                    "name": "fortunate:add_with_fortune_redstone"
+                    "name": "fortunate:add_with_fortune"
                 },
                 {
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:redstone"
+              "name": "minecraft:raw_iron"
             }
           ]
         }
@@ -54,5 +47,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/redstone_ore"
+  "random_sequence": "minecraft:blocks/iron_ore"
 }

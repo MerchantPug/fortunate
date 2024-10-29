@@ -13,22 +13,33 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "enchantments": [
-                      {
-                        "enchantment": "minecraft:silk_touch",
-                        "levels": {
-                          "min": 1
+                    "predicates": {
+                      "enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
                         }
-                      }
-                    ]
+                      ]
+                    }
                   }
                 }
               ],
-              "name": "minecraft:deepslate_gold_ore"
+              "name": "minecraft:deepslate_lapis_ore"
             },
             {
               "type": "minecraft:item",
               "functions": [
+                {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 9.0,
+                    "min": 4.0
+                  },
+                  "function": "minecraft:set_count"
+                },
                 {
                     "function": "minecraft:reference",
                     "name": "fortunate:add_with_fortune"
@@ -37,7 +48,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:raw_gold"
+              "name": "minecraft:lapis_lazuli"
             }
           ]
         }
@@ -45,5 +56,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/deepslate_gold_ore"
+  "random_sequence": "minecraft:blocks/deepslate_lapis_ore"
 }
